@@ -1,0 +1,18 @@
+Revision history for Crypt-Skip32-XS
+
+0.03  Mon Dec 29 12:28:08 UTC 2008
+    - Updated pod to note that Crypt::Skip32 now calls this module if
+      available.
+    - Updated benchmark script to ensure Crypt::Skip32 does not call this
+      module, so the comparison is between C/XS and pure Perl.
+    - Set executable bits for benchmark script.
+    - Removed unnecessary main function from C source code.
+
+0.02  Sun Nov 23 06:18:35 UTC 2008
+    - Avoided using a for loop to copy the key into the object.
+    - Tweaked pod.
+    - Moved the benchmarking script to ex/ for more kwalitee.
+    - Used warnings for more kwalitee.
+
+0.01  Thu Nov 20 18:39:17 UTC 2008
+    - Initial distribution.
