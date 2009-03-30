@@ -23,7 +23,7 @@ PREINIT:
     unsigned char *bytes;
 CODE:
     if (! SvPOK(key)) {
-        croak("key must be an untained string scalar");
+        croak("key must be an untainted string scalar");
     }
 
     bytes = (unsigned char *)SvPV(key, key_size);
