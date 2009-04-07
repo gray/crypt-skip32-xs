@@ -11,11 +11,13 @@ WriteMakefile(
     PREREQ_PM     => {
         'Test::More' => 0,
     },
-    (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
-        resources => {
-            Repository => 'http://github.com/gray/crypt-skip32-xs'
+    (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (
+        META_MERGE => {
+            resources => {
+                repository => 'http://github.com/gray/crypt-skip32-xs',
+            }
         }
-    }) : () ),
+    ) : () ),
     dist          => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean         => { FILES => 'Crypt-Skip32-XS-*' },
 );
