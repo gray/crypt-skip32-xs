@@ -62,7 +62,7 @@ PREINIT:
 CODE:
     block_size = SvCUR(input);
     if (4 != block_size) {
-        croak("input must be 4 bytes long");
+        croak("%stext must be 4 bytes long", ix ? "plain" : "cipher");
     }
 
     RETVAL = newSVsv(input);
