@@ -1,5 +1,11 @@
 Revision history for Crypt-Skip32-XS
 
+0.04  Tue Jul 14 16:17:43 UTC 2009
+    - Changed error messages to match Crypt::Skip32.
+    - Moved author tests into separate directory.    
+    - Updated ppport.h.
+    - Added link to repository
+
 0.03  Mon Dec 29 12:28:08 UTC 2008
     - Updated pod to note that Crypt::Skip32 now calls this module if
       available.
