@@ -101,7 +101,7 @@ L<http://en.wikipedia.org/wiki/Skipjack_(cipher)>
 =head1 REQUESTS AND BUGS
 
 Please report any bugs or feature requests to 
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Crypt-Skip32-XS>. I will be
+L<http://rt.cpan.org/Public/Bug/Report.html?Queue=Crypt-Skip32-XS>. I will be
 notified, and then you'll automatically be notified of progress on your bug as
 I make changes.
 
@@ -125,7 +125,7 @@ L<http://cpanratings.perl.org/d/Crypt-Skip32-XS>
 
 =item * RT: CPAN's request tracker
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Crypt-Skip32-XS>
+L<http://rt.cpan.org/Public/Dist/Display.html?Name=Crypt-Skip32-XS>
 
 =item * Search CPAN
 
@@ -135,7 +135,7 @@ L<http://search.cpan.org/dist/Crypt-Skip32-XS/>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2008 gray <gray at cpan.org>, all rights reserved.
+Copyright (C) 2008-2009 gray <gray at cpan.org>, all rights reserved.
 
 This library is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
