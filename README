@@ -22,7 +22,7 @@ A C compiler is required to build this module.
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2008 by gray <gray@cpan.org>
+Copyright (C) 2008-2009 by gray <gray@cpan.org>
 
 This library is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
