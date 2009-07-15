@@ -117,7 +117,7 @@ You can also look for information at:
 
 =item * GitHub Source Repository
 
-L<http://github.com/gray/geo-coder-bing>
+L<http://github.com/gray/crypt-skip32-xs>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
