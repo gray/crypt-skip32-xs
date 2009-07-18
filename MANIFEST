@@ -12,5 +12,7 @@ t/02_methods.t
 typemap
 XS.xs
 xt/kwalitee.t
+xt/perlcritic.t
+xt/perlcriticrc
 xt/pod.t
 xt/pod_coverage.t
