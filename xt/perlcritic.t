@@ -1,4 +1,5 @@
 use strict;
+use warnings;
 use Test::More;
 
 eval { require Test::Perl::Critic };
