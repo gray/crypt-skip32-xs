@@ -7,6 +7,29 @@
 
 #include "_skip32.c"
 
+static void my_croak(char* pat, ...) {
+    va_list args;
+    SV *error_sv;
+
+    dTHX;
+    dSP;
+
+    error_sv = newSV(0);
+
+    va_start(args, pat);
+    sv_vsetpvf(error_sv, pat, &args);
+    va_end(args);
+
+    ENTER;
+    SAVETMPS;
+    PUSHMARK(SP);
+    XPUSHs(sv_2mortal(error_sv));
+    PUTBACK;
+    call_pv("Carp::croak", G_VOID | G_DISCARD);
+    FREETMPS;
+    LEAVE;
+}
+
 typedef struct skip32 {
     unsigned char key[10];
 } *Crypt__Skip32__XS;
@@ -24,12 +47,12 @@ PREINIT:
     unsigned char *bytes;
 CODE:
     if (! SvPOK(key)) {
-        croak("key must be an untainted string scalar");
+        my_croak("key must be an untainted string scalar");
     }
 
     bytes = (unsigned char *)SvPV(key, key_size);
     if (10 != key_size) {
-        croak("key must be 10 bytes long");
+        my_croak("key must be 10 bytes long");
     }
 
     New(0, RETVAL, 1, struct skip32);
@@ -62,7 +85,7 @@ PREINIT:
 CODE:
     block_size = SvCUR(input);
     if (4 != block_size) {
-        croak("%stext must be 4 bytes long", ix ? "plain" : "cipher");
+        my_croak("%stext must be 4 bytes long", ix ? "plain" : "cipher");
     }
 
     RETVAL = newSVsv(input);
