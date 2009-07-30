@@ -1,5 +1,9 @@
 Revision history for Crypt-Skip32-XS
 
+0.05 Wed Thu Jul 30 01:16:38 UTC 2009
+    - Used Carp (from within XS) so error messages are more useful and
+      fully match those of Crypt::Skip32.
+
 0.04  Tue Jul 14 16:17:43 UTC 2009
     - Changed error messages to match Crypt::Skip32.
     - Moved author tests into separate directory.    
