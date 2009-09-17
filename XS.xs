@@ -5,7 +5,7 @@
 #include "XSUB.h"
 #include "ppport.h"
 
-#include "_skip32.c"
+#include "skip32.c"
 
 static void my_croak(char* pat, ...) {
     va_list args;
