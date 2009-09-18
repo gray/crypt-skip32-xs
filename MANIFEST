@@ -1,5 +1,3 @@
-.perlcriticrc
-_skip32.c
 Changes
 ex/benchmark.pl
 lib/Crypt/Skip32/XS.pm
@@ -7,12 +5,17 @@ Makefile.PL
 MANIFEST			This list of files
 ppport.h
 README
+skip32.c
 t/00_load.t
 t/01_new.t
 t/02_methods.t
 typemap
 XS.xs
 xt/kwalitee.t
+xt/leaktrace.t
 xt/perlcritic.t
+xt/perlcriticrc
 xt/pod.t
 xt/pod_coverage.t
+xt/portability_filenames.t
+xt/valgrind.t
